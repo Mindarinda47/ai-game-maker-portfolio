@@ -8,6 +8,12 @@
 
 저는 주소창과 페이지 내 찾기, 화면 테마 변경을 퍼즐 행동으로 쓰고 뉴스·쇼핑·스포츠 페이지의 단서와 보상이 미니게임으로 이어지도록 기획했습니다. Codex에 명세를 주고 가상 브라우저, 인벤토리와 진행 상태, Canvas 미니게임을 연결해 첫 버전에서 엔딩까지 도달할 수 있게 했습니다. 이후 스포츠 보상으로 열쇠를 얻는 흐름을 다듬고, 별도 작업으로 RPG 맵·전투·보스 패턴을 확장했습니다. [게임 구조](https://github.com/Mindarinda47/website-escape-game-portfolio/blob/main/docs/architecture.md)
 
+## 공을 동시에 잡으려 할 때의 규칙
+
+축구 승부예측 화면을 실행해 보니 여러 선수가 공에 몰렸고, 양 팀 선수가 동시에 공에 붙으면 공이 둘 사이를 계속 오갔습니다. Codex에는 양 팀이 동시에 닿는 경우 공을 그 자리에서 튕겨 내보내 달라고 했습니다. 이후 경기를 보면서 득점 직후에도 선수들이 기존 위치에 남아 공격 패턴이 반복되는 것을 확인했습니다. 득점하면 대형을 다시 배치하고, 실점한 팀이 중앙에서 시작하도록 조건을 추가했습니다.
+
+현재 코드에서는 팀마다 공을 쫓는 필드 선수를 한 명으로 두고, 나머지는 대형을 바탕으로 움직입니다. 양 팀이 점유 범위에 동시에 들어오면 경합으로 처리해 공을 튕기고, 짧은 재접촉 쿨다운을 둡니다. 회귀 테스트는 득점 후 대형과 킥오프, 직전 패서에게 즉시 돌아가는 패스, 공수 전환 시 수비 대형을 각각 확인합니다. [경기 시뮬레이션](https://github.com/Mindarinda47/website-escape-game-portfolio/blob/main/src/pages/SportsPage.tsx) · [회귀 테스트](https://github.com/Mindarinda47/website-escape-game-portfolio/blob/main/src/test/sportsSimulation.test.ts)
+
 ## 지인 테스트 후 힌트 강도를 조정
 
 초기에는 진행률 문구가 정답의 방향을 지나치게 쉽게 알려줘, 완료한 페이지의 테두리 발광으로 피드백을 바꿨습니다. 이후 지인에게 게임을 플레이해 달라고 했을 때는 힌트를 보강할 필요가 있다는 의견을 받았습니다. 이에 인벤토리 처음부터 문자 단서의 빈칸 여섯 개를 보여주고, 찾은 문자를 드래그로 배열하며, 더 필요한 힌트는 마을의 점술가에게 물을 수 있게 했습니다. Codex에 인벤토리·저장 상태와 점술가 대화를 연결하도록 맡겼습니다. [인벤토리 코드](https://github.com/Mindarinda47/website-escape-game-portfolio/blob/main/src/browser/InventoryDrawer.tsx) · [미니게임 코드](https://github.com/Mindarinda47/website-escape-game-portfolio/blob/main/src/minigame/AdventureCanvas.tsx)
