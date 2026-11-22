@@ -1,6 +1,6 @@
 # AI Game Maker Portfolio
 
-게임 규칙은 제가 정합니다. 문제가 생기면 어느 상태에서 재현되는지 확인하고, Codex에 **수정할 코드와 유지할 동작**을 함께 지정합니다. 빌드에서 직접 실행해 본 뒤, 어떤 조건을 바꾸고 어떤 동작을 채택할지 결정합니다.
+게임 규칙과 구현 방향을 정한 뒤, 기존 코드를 살펴보고 기능을 구현하는 데 Codex를 활용합니다. 게임을 직접 실행해 예상과 다른 동작을 확인하고, 다음 수정에서 바꿀 조건과 유지할 동작을 정리합니다.
 
 > 문제 재현 → 영향 범위 확인 → 변경·유지 조건 지정 → Codex 구현 → 정적 확인·빌드 → 실제 플레이 → 다음 수정 범위 결정
 
@@ -24,3 +24,7 @@
 **Website Escape Game** · 해커톤 사전과제로 3일 동안 제작해 배포한 웹게임입니다. 축구 미니게임에서 공이 양 팀 선수 사이를 왕복하자, 동시 접근을 경합으로 처리하고 킥 직후 재접촉을 막았습니다. [제작 사례](docs/WEBSITE_ESCAPE_CASE.md) · [바로 플레이](https://mindarinda47.github.io/website-escape-game/)
 
 **붐비(Boombi)** · 부산 혼잡 예보 서비스입니다. 모델에는 행사 공지 해석과 결과 설명을 맡겼습니다. 혼잡 점수와 추천 순서는 규칙 엔진이 계산하며, 모델 응답이 검증에 실패해도 규칙 결과를 제공합니다. [설계 사례](docs/BOOMBI_CASE.md) · [공개 코드](https://github.com/Mindarinda47/boombi-ai-crowd-forecast)
+
+## Game Programming Foundation
+
+Unity 2D RPG와 VR 네트워크 프로젝트 등 기존 개발 작업은 종합 포트폴리오에 정리했습니다. [Game Programming Portfolio](https://github.com/Mindarinda47/game-programming-portfolio)
