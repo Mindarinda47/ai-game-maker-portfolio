@@ -12,7 +12,7 @@
 
 축구 승부예측 화면에서 양 팀 선수가 동시에 공에 붙으면 공이 둘 사이를 계속 오갔습니다. Codex에 이 장면을 설명하고, 두 선수가 동시에 닿는 순간 공이 튕겨 나가도록 요청했습니다. 후속 경기에서는 득점 직후에도 선수들이 기존 위치에 남아 공격 패턴이 반복됐습니다. 그 상황에서는 대형을 다시 배치하고, 실점한 팀이 중앙에서 시작하도록 요청했습니다.
 
-현재 코드에서는 팀마다 공을 쫓는 필드 선수를 한 명으로 두고, 나머지는 대형을 바탕으로 움직입니다. 양 팀이 점유 범위에 동시에 들어오면 경합으로 처리해 공을 튕깁니다. 바로 다시 공을 건드리는 일을 막기 위해 Codex가 짧은 재접촉 쿨다운을 넣었습니다. 회귀 테스트는 득점 후 대형과 킥오프, 직전 패서에게 즉시 돌아가는 패스, 공수 전환 시 수비 대형을 각각 확인합니다. [경기 시뮬레이션](https://github.com/Mindarinda47/website-escape-game-portfolio/blob/main/src/pages/SportsPage.tsx) · [회귀 테스트](https://github.com/Mindarinda47/website-escape-game-portfolio/blob/main/src/test/sportsSimulation.test.ts)
+현재 코드에서는 팀마다 공을 쫓는 필드 선수를 한 명으로 두고, 나머지는 대형을 바탕으로 움직입니다. 양 팀이 점유 범위에 동시에 들어오면 경합으로 처리해 공을 튕깁니다. 이후 짧은 쿨다운으로 즉시 재접촉을 막습니다. 회귀 테스트는 득점 후 대형과 킥오프, 직전 패서에게 즉시 돌아가는 패스, 공수 전환 시 수비 대형을 각각 확인합니다. [경기 시뮬레이션](https://github.com/Mindarinda47/website-escape-game-portfolio/blob/main/src/pages/SportsPage.tsx) · [회귀 테스트](https://github.com/Mindarinda47/website-escape-game-portfolio/blob/main/src/test/sportsSimulation.test.ts)
 
 ## 지인 테스트 후 힌트 강도를 조정
 
