@@ -8,13 +8,13 @@ Codex와 게임을 만들며 어떤 규칙을 정했고, 실제 플레이를 보
 
 **개인 프로젝트 · 2026.08–현재 · Godot 4 / C# · Windows · 개발 중**
 
-<img align="right" width="207" src="assets/mygoatmatch-battle.gif" alt="MYGOATmatch 4인 자동전투 실제 화면. 경기장, 체력 바, 스킬 HUD가 보입니다.">
+<img align="right" width="180" src="assets/mygoatmatch-battle.gif" alt="MYGOATmatch 4인 자동전투 실제 화면. 경기장, 체력 바, 스킬 HUD가 보입니다.">
 
 **제가 맡은 일**<br>
-전투 규칙과 스킬 발동 조건, 연출 순서를 정했습니다. 직접 경기를 돌려 결과를 보고 다음 수정을 결정했습니다.
+전투 규칙·스킬 조건·연출 설계, 직접 경기 확인과 수정 판단.
 
 **Codex에 맡긴 일**<br>
-기존 코드 조사, 지정한 범위의 구현·수정, 회귀 테스트 작성.
+기존 코드 조사, 지정 범위 구현·수정, 회귀 테스트 작성.
 
 [시즌 2 전투 영상](https://www.instagram.com/p/Dey872nMY9Q/)
 
