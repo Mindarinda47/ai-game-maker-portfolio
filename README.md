@@ -8,20 +8,20 @@
 
 **개인 프로젝트 · 2026.08–현재 · Godot 4 / C# · Windows · 개발 중**
 
-<img align="right" width="180" src="assets/mygoatmatch-battle.gif" alt="MYGOATmatch 4인 자동전투 실제 화면. 경기장, 체력 바, 스킬 HUD가 보입니다.">
+<img align="right" width="160" src="assets/mygoatmatch-battle.gif" alt="MYGOATmatch 4인 자동전투 실제 화면. 경기장, 체력 바, 스킬 HUD가 보입니다.">
 
 **제가 맡은 일**<br>
-캐릭터별 전투 규칙, 스킬 발동 조건과 연출을 정하고, 직접 경기를 돌려 수정할 부분을 골랐습니다.
+캐릭터별 전투 규칙과 발동 조건, 연출을 정하고 경기를 돌려 수정할 부분을 골랐습니다.
 
 **Codex에 맡긴 일**<br>
-관련 코드를 조사하고, 제가 정한 범위에서 구현·수정하며 필요한 회귀 테스트를 작성하도록 했습니다.
-
-경기에서 발견한 문제는 판정 범위를 화면에 띄우거나 리플레이를 돌려 확인했습니다.
+관련 코드를 찾아 정해 둔 범위에서 구현·수정하고, 필요한 회귀 테스트를 작성하게 했습니다.
 
 [시즌 2 전투 영상](https://www.instagram.com/p/Dey872nMY9Q/)<br>
 [기술 사례 4편](docs/MYGOATMATCH_CASE.md) · [Codex 작업 방식](docs/AI_WORKFLOW.md)
 
 <br clear="right">
+
+경기에서 발견한 문제는 판정 범위 표시와 리플레이로 확인했습니다.
 
 MYGOATmatch 소스 코드는 비공개입니다.<br>
 캐릭터와 원작 IP의 권리는 각 권리자에게 있으며, 이 문서는 개인 프로젝트의 개발 과정과 기술적 판단을 소개합니다.
